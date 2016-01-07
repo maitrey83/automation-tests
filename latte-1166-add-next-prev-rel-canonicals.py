@@ -12,9 +12,6 @@ path = "C:\\Users\\maitreypatel\\Desktop\\SEOTestCases\\LATTETestCases"
 workBook = "latte-1166-testdata.xlsx"
 sheetName = "Sheet1"
 
-#def changeDir():
- #   changedir = os.chdir(path)
-
 def verifyRels():
     #sarpUrls = openpyxl.load_workbook(workBook).get_sheet_by_name(sheetName).columns[0]
     readFile = open('sarpLinks.txt','r')
@@ -36,7 +33,5 @@ def verifyRels():
         print(relNext)
         print(relPrev)
 
-
-#changeDir()
 verifyRels()
 
