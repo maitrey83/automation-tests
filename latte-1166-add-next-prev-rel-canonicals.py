@@ -28,7 +28,8 @@ def verifyRels():
         #titleTag = soup.title
 
         if relNext == None and relPrev == None:
-            logging.error("Rel prev or next is not displayed " + str(url))
+            print("***Rel prev or next is not displayed*** " + str(url))
+
         print(relCans)
         print(relNext)
         print(relPrev)
