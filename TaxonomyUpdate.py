@@ -10,6 +10,7 @@ workBook = "Pets_Taxonomy_Update_V1.3.xlsx"
 sheetNameRename = "Rename Validation"
 sheetNameInsert = "Insert Validation"
 sheetNameDelete = "Delete Validation"
+sheetNameRedirect = "Redirect Validation"
 
 def changeDirectory():
     changedir = os.chdir(path)
@@ -26,50 +27,71 @@ def getRenames():
         getCrumb.append(crumbList)
     #print(getCrumb)
 
+
+# To test the rollback, change the column number
 def getFunnyNames():
-    getExcelNames = openpyxl.load_workbook(workBook).get_sheet_by_name(sheetNameRename).columns[0]
+    getExcelNames = openpyxl.load_workbook(workBook).get_sheet_by_name(sheetNameRename).columns[10]
     for taxRenames in getExcelNames:
         excelNames.append(taxRenames.value)
     #print(excelNames)
     #return excelNames
 
+#verify the rollback renames of the taxonomies
+
+
 # Compare the parsed taxonomy values with the excel taxonomy values
-notMatchedRenames = 0
+
 def compareNames():
+    notMatchedRenames = 0
     for lastCrumbs in getCrumb:
         if lastCrumbs not in excelNames:
-            print(lastCrumbs)
-            notMatchedRenames=+1
-        if notMatchedRenames==0:
-            print("All renames are matching")
+            print("Crumbs - "+str(lastCrumbs) + " excel Names " + str(excelNames))
+            notMatchedRenames= notMatchedRenames + 1
+    print(notMatchedRenames)
+    if notMatchedRenames==0:
+        print("All renames are matching")
 
-invalidInserts = 0
 def verifyInserts():
+    invalidInserts = 0
     getInsertNames = openpyxl.load_workbook(workBook).get_sheet_by_name(sheetNameInsert).columns[6]
     for inserts in getInsertNames:
         insertNames = inserts.value
         req_status = requests.get(insertNames).status_code
         if req_status != 200:
             print(insertNames)
-            invalidInserts=+1
+            invalidInserts = invalidInserts + 1
     print(invalidInserts)
     if invalidInserts==0:
         print("All insert urls are correct")
 
-invalidDeleteCounts = 0
+
 def verifyDeletes():
+    invalidDeleteCounts = 0
     getDeletedNames = openpyxl.load_workbook(workBook).get_sheet_by_name(sheetNameDelete).columns[6]
 
 
-
+def redirects():
+    numberofredirecturls = 0
+    getRedirects = openpyxl.load_workbook(workBook).get_sheet_by_name(sheetNameDelete).columns[6]
+    for redirecturls in getRedirects:
+        redirectNames =  redirecturls.value
+        redirectstatus = requests.get(redirecturls.rstrip('\n'), allow_redirects=True)
+        if redirectstatus is not 301:
+            print('Url is not redirecting - ' + str(redirecturls))
+            numberofredirecturls = numberofredirecturls + 1
+    if numberofredirecturls == 0:
+       print('All urls are redirecting and there is ' + str(numberofredirecturls) + ' urls')
+    else:
+        print('number of Nonredirecting urls are ' + str(numberofredirecturls))
 
 
 
 changeDirectory()
-#getRenames()
-#getFunnyNames()
-#compareNames()
-verifyInserts()
+getRenames()
+getFunnyNames()
+compareNames()
+#verifyInserts()
+#redirects()
 
 
 

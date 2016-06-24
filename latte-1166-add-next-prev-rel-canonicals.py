@@ -19,7 +19,7 @@ def verifyRels():
 
     for url in lineByLine:
         #link = url.value
-        req = requests.get(url)
+        req = requests.get(url.rstrip('\n'))
         soup = BeautifulSoup(req.content, "html.parser")
         relCans = soup.find("link", {"rel": "canonical"})
         relNext = soup.find("link", {"rel": "next"})
