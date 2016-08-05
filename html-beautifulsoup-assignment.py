@@ -8,5 +8,6 @@ tags = soup('td')
 #print (tags)
 score = re.findall('[0-9]+', str(tags))
 score = [int(i) for i in score]
+print(score)
 score = sum(score)
 print (score)

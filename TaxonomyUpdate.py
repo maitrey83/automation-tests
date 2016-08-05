@@ -90,8 +90,8 @@ changeDirectory()
 getRenames()
 getFunnyNames()
 compareNames()
-#verifyInserts()
-#redirects()
+verifyInserts()
+redirects()
 
 
 

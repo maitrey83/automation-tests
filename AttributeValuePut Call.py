@@ -41,7 +41,7 @@ def put_validation(body):
     elif req.status_code == 400:
         print('Status Code : ', req.status_code)
         print("Expected status value, if requested parameters are incorrect")
-        print(req.content)   
+        #print(req.content)   
     else:
         print('Status Code : ', req.status_code)
         req_json_data = json.loads(str(json_data))
