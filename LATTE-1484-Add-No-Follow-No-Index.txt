@@ -1,2 +1,11 @@
 http://www.overstock.com/Home-Garden/Sofas-Loveseats/Contemporary,Sofa,/style,type,/2027/subcat.html
 http://www.overstock.com/Home-Garden/Sofas-Loveseats/Abbyson-Living,Fabric,Contemporary,Sofa,/brand,material,style,type,/2027/subcat.html
+https://www.overstock.com/Home-Garden/Sofas-Loveseats/Grey,Fabric,Modern,Sectional-Sofa,/color,material,style,type,/2027/subcat.html?TID=SN:sub2027:::refinements-4-1:
+https://www.overstock.com/Home-Garden/Living-Room-Furniture/Brown,Recliners,Wood,Modern,Sofa,/color,chair-type,material,style,type,/713/cat.html?TID=SN:cat713:::refinements-5-2:
+https://www.overstock.com/Bedding-Bath/Sheets-Pillowcases/Blue,King,Cotton,Solid-Color,300-_--399-TC,Fitted,/color,size,material,pattern,thread-count-range,type,/459/dept.html?TID=SN:dep459:::refinements-6-1:
+https://www.overstock.com/Jewelry-Watches/Watches/Tag-Heuer,Stainless-Steel,(1500,2500),20mm-Strap,Luxury,/brand,material,price,strap-width,type,/292/dept.html?TID=SN:dep292:::refinements-11-3:
+https://www.overstock.com/Jewelry-Watches/Watches/Tag-Heuer,41mm~40mm,Stainless-Steel,(1500,2500),20mm-Strap,Luxury,/brand,case-diameter,material,price,strap-width,type,/292/dept.html?TID=SN:dep292:::refinements-4-2:
+https://www.overstock.com/Home-Garden/Kids-Furniture/Brown~Grey~White~Black,/color,/1455/cat.html?TID=SN:cat1455:::refinements-3-4:
+https://www.overstock.com/Home-Garden/Kids-Furniture/Black~Brown~Grey~White,Faux-Leather~Steel,/color,material,/1455/cat.html?TID=SN:cat1455:::refinements-5-5:
+https://www.overstock.com/Home-Garden/Kids-Furniture/Black~Brown~Grey~White,Faux-Leather~Steel~Linen,/color,material,/1455/cat.html?TID=SN:cat1455:::refinements-5-6:
+https://www.overstock.com/Home-Garden/Kids-Furniture/INSPIRE-Q,Black~Brown~Grey~White,Faux-Leather~Linen~Steel,/brand,color,material,/1455/cat.html?TID=SN:cat1455:::refinements-6-1:
