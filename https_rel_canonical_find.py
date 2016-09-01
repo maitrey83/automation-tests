@@ -14,7 +14,7 @@ def relcanonical_https():
         try:
             relCans = soup.find("link", {"rel": "canonical"})
             #print(relCans)
-            cans = re.findall('\"http://www.*\" ', str(relCans))
+            cans = re.findall('\"http://www.*html\"', str(relCans))
             if cans != []:
                 print(cans)
                 numberofurls = numberofurls + 1
