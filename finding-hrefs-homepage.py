@@ -1,7 +1,13 @@
 from bs4 import BeautifulSoup
 import requests
-url = "https://www.overstock.com/Home-Garden/Kids-Furniture/Black~Brown~Grey~White,Faux-Leather~Steel,/color,material,/1455/cat.html?TID=SN:cat1455:::refinements-5-5:"
-reqs = requests.get(url.rstrip('\n'))
-soup = BeautifulSoup(reqs.content, 'html.parser')
-for links in soup.findAll('a'):
-    print(links.get('href'))
+url = "https://www.overstock.com/"
+
+def extract_links(url):
+    reqs = requests.get(url.rstrip('\n'))
+    soup = BeautifulSoup(reqs.content, 'html.parser')
+    hrefs = []
+    anchors = soup.findAll('a')
+    for links in anchors:
+        hrefs.append(links['href'])
+    return hrefs
+print(extract_links(url))
