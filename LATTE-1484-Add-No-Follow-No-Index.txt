@@ -1,5 +1,5 @@
-http://www.overstock.com/Home-Garden/Sofas-Loveseats/Contemporary,Sofa,/style,type,/2027/subcat.html
-http://www.overstock.com/Home-Garden/Sofas-Loveseats/Abbyson-Living,Fabric,Contemporary,Sofa,/brand,material,style,type,/2027/subcat.html
+https://www.overstock.com/Home-Garden/Sofas-Loveseats/Contemporary,Sofa,/style,type,/2027/subcat.html
+https://www.overstock.com/Home-Garden/Sofas-Loveseats/Abbyson-Living,Fabric,Contemporary,Sofa,/brand,material,style,type,/2027/subcat.html
 https://www.overstock.com/Home-Garden/Sofas-Loveseats/Grey,Fabric,Modern,Sectional-Sofa,/color,material,style,type,/2027/subcat.html?TID=SN:sub2027:::refinements-4-1:
 https://www.overstock.com/Home-Garden/Living-Room-Furniture/Brown,Recliners,Wood,Modern,Sofa,/color,chair-type,material,style,type,/713/cat.html?TID=SN:cat713:::refinements-5-2:
 https://www.overstock.com/Bedding-Bath/Sheets-Pillowcases/Blue,King,Cotton,Solid-Color,300-_--399-TC,Fitted,/color,size,material,pattern,thread-count-range,type,/459/dept.html?TID=SN:dep459:::refinements-6-1:
