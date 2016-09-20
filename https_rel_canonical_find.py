@@ -3,8 +3,8 @@ import requests
 import re
 
 def relcanonical_https():
-    #readFile = open('https_rel_canonical_find.txt', 'r')
-    readFile = open('https_rel_canonical_find_static.txt', 'r')
+    readFile = open('https_rel_canonical_find.txt', 'r')
+    #readFile = open('https_rel_canonical_find_static.txt', 'r')
     lines = readFile.readlines()
     numberofurls = 0
     for urls in lines:
