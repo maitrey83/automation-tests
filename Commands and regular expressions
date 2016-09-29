@@ -1,0 +1,13 @@
+scp -r maitreypatel@cron-master.latte.test.ostk.com:/opt/SiteMapping/pages .
+cd pages
+find . -name "*.xml" -type f -delete
+cd ..
+gunzip -r .
+8qiNDYzzdP7g8s+U3SInrxp4vdeQuGxpkZcXeGFSxlg
+
+reg epression
+cat buyingguide.xml | grep -Eo "priority>[0-9 .]+</priority"
+
+
+-Eo - cuts the rest of the things that dont match
+cat buyingguide.xml | grep -Eo "priority>[0-9 .]+</priority" | grep -v 0.4
