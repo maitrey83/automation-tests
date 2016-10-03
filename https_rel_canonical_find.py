@@ -3,8 +3,10 @@ import requests
 import re
 
 def relcanonical_https():
-    readFile = open('https_rel_canonical_find.txt', 'r')
+    #readFile = open('https_rel_canonical_find.txt', 'r')
     #readFile = open('https_rel_canonical_find_static.txt', 'r')
+    readFile = open('https_rel_canonical_find_static_weird_links', 'r')
+
     lines = readFile.readlines()
     numberofurls = 0
     for urls in lines:
@@ -14,13 +16,14 @@ def relcanonical_https():
         #print (desc)
         try:
             relCans = soup.find("link", {"rel": "canonical"})
+            print(relCans)
             relNext = soup.find("link", {"rel": "next"})
             #print(relCans)
             cans = re.findall('\"http://www.*\" ', str(relCans))
             #cansnext = re.findall('\"http://www.*\" ', str(relNext))
             if cans != []:
                 print("Rel Canonical ", cans)
-                #print('Rel Next' + cansnext)
+                print('URL- ' + urls)
                 numberofurls = numberofurls + 1
             '''if cans is not None:
                 print ('url with rel canonicals - ' + str(urls.rstrip('\n')))
