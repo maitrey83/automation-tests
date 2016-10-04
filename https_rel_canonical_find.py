@@ -16,15 +16,15 @@ def relcanonical_https():
         #print (desc)
         try:
             #relCans = soup.find("link", {"rel": "canonical"})
-            canonical = soup.find("link", rel = "canonical")
+            canonical = soup.find("link", rel = "canonical")['href']
             #print(canonical)
-            if canonical:
+            '''if canonical:
                 canonical_url = canonical['href']
             else:
-                print('No rel canonical present for the url ' + urls )
+                print('No rel canonical present for the url ' + urls )'''
             #relNext = soup.find("link", {"rel": "next"})
             #print(relCans)
-            cans = re.findall('(http://www.*)', str(canonical_url))
+            cans = re.findall('(http://www.*)', str(canonical))
             #cansnext = re.findall('\"http://www.*\" ', str(relNext))
             if cans != []:
                 print("Rel Canonical ", cans)
